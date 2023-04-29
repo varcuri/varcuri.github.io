@@ -1,0 +1,338 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@viewport {
+	width: device-width;
+	zoom: 1.0;
+}
+
+.banner2 {
+	background-image: radial-gradient(circle, #000, #1F1F1F 45% );
+	/*border: 3px solid;*/
+	padding: 0;
+	position: sticky;
+	top: 0;
+	bottom: auto;
+	z-index: 999;
+}
+
+.banner2 h1 {
+	font-stretch: ultra-expanded;
+	font-size: 300%;
+	text-shadow: 4px -1px 0 black;
+	letter-spacing: 5px;
+}
+
+.coverPic {
+	max-width: 25%;
+}
+
+video {
+	width: 100%;
+	height: auto;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+html, body {
+	overflow-x: hidden;
+	max-width: 100%;
+}
+
+.sidebar {
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	/*background-color: #000; */
+	background-image: linear-gradient(to right, #000,  #1F1F1F);
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+	/*border: 3px solid;*/
+
+}
+
+.sidebar a {
+	display: block;
+	color: antiquewhite;
+	padding: 16px;
+	text-decoration: none;
+	font-size: larger;
+}
+
+.sidebar a.active {
+	background-color: antiquewhite;
+	color: #000;
+}
+
+.sidebar a:hover:not(.active) {
+	background-color: antiquewhite;
+    color: #000;
+}
+
+div.content {
+	margin-left: 200px;
+	padding: 1px 16px;
+	height: 1000px;
+	font-size: larger;
+}
+
+body {
+	background-color:#1F1F1F;
+	
+	color:antiquewhite;
+	position: relative;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+
+img {
+	max-width: 100%;
+}
+
+.DTimage {
+	width: 25%;
+	border: 5px solid;
+	position: relative;
+}
+
+img.coverPic {
+	border: 5px solid;
+	position: relative;
+
+}
+
+a {
+	color: red;
+}
+
+.projectDescription {
+	position: relative;
+	left: 2.5%;
+	margin-right:5%;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	height: 100%;
+	background-color: #000000;
+	border-style: solid;
+	border-top: none
+}
+
+.inside {
+	list-style-type: none;
+}
+
+nav li a {
+	display: block;
+	color:antiquewhite ;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+
+.currentPage {
+	display: block;
+	background-color: antiquewhite;
+}
+
+.currentPage a {
+	color:#000000;
+}
+
+
+.banner {
+	max-width: 99%;
+	background-color: #000000;
+	border-style: solid;
+	box-sizing: border-box;
+	position: sticky;
+	top: 0;
+	bottom: auto;
+	z-index: 999;
+}
+
+
+h1 {
+	position: relative;
+	/*left: 30%;*/
+}
+
+.openingParagraph {
+	padding: 20px;
+	border-radius: 20px;
+	/* background-color: #6c6969; */
+	background-image: linear-gradient(to bottom right, #6c6969, #3a3939);
+	font-size:larger;
+	margin-top: 20px;
+
+}
+
+.openingParagraph a {
+	color: black;
+}
+.openingParagraph h2 {
+	text-shadow: -1px -1px 0 #1F1F1F;
+}
+
+.sitemap {
+	padding: 10px;
+}
+
+.sitemap img {
+	width: 128px;
+	height: 128px;
+	border: 5px solid antiquewhite;
+}
+
+.sitemap img:active {
+	border: 5px solid antiquewhite;
+}
+
+.sitemap img:hover:not(.active) {
+	border: 5px solid red;
+}
+
+.sitemap a {
+	color: antiquewhite;
+	text-decoration: none;
+}
+
+.sitemap a:active {
+	color: antiquewhite;
+	text-decoration: none;
+}
+
+.sitemap a:hover:not(.active) {
+	color: red;
+}
+/* Form Layout Styles */
+
+.formRow{
+	border-radius: 20px;
+	/* background-color: #121111; */
+	background-image: linear-gradient(to bottom right,#3a3939, #121111);
+	padding: 20px;
+}
+
+
+
+label {
+	padding-left: 3px;
+	font-size: large;
+	font-stretch: expanded;
+}
+
+input[type=text], [type=email], textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid antiquewhite;
+	border-radius: 5px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 10px;
+	resize: vertical;
+}
+
+input[type=submit] {
+	background-color: antiquewhite;
+	color:#000;
+	padding: 12px 20px;
+	font-size:large;
+	font-weight: bold;
+	font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	border-radius: 3px;
+	border-color: antiquewhite;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #1F1F1F;
+	color: antiquewhite;
+}
+
+/* Restyling the nav bar for small screens. This will be changed later */
+@media screen and (max-width: 700px) {
+	nav ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		width: 100px;
+		height: 100%;
+		background-color: #000000;
+		border-style: solid;
+		border-top: none
+	}
+
+	.sidebar {
+		width: 100%;
+		height: auto;
+		position: relative;
+	}
+
+	.sidebar a {float: left}
+	div.content {margin-left: 0}
+
+	.banner {
+		max-width: 97.5%;
+		background-color: #000000;
+		border-style: solid;
+		box-sizing: border-box;
+	}
+	.banner2 h1 {
+		font-size: 200%;
+	}
+
+}
+
+@media screen and (max-width: 400px) {
+	.sidebar a {
+		text-align: center;
+		float: none;
+	}
+
+	div.aboutStory img {
+		max-width: 100%;
+		
+		border: 5px solid;
+	}
+	.banner2 h1 {
+		font-size: 100%;
+	}
+	.sitemap img {
+		width: 55%;
+		height: 25%;
+		border: 5px solid antiquewhite;
+	}
+
+	.coverPic {
+		max-width: 50%;
+	}
+
+}
+
+
+div.aboutStory p {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+div.aboutStory img {
+	max-width: 45%;
+	min-width: 45%;
+	border: 5px solid;
+}
+
+.tableuaPlaceholder {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
